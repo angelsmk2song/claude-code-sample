@@ -21,3 +21,8 @@
 - 지역별 검색 필터 추가
 - 월별/계절별 정렬 기능 추가
 - 축제 상세 페이지 연결
+
+## 데이터베이스 연결
+- `db/schema.sql` 파일에 PostgreSQL용 `festivals` 테이블 스키마와 예시 데이터를 추가했습니다.
+- Supabase에서 SQL 에디터를 열고 `schema.sql` 내용을 실행하면 바로 테이블과 예시 데이터를 생성할 수 있습니다.
+- 이후 `supabase-config.js`에 `Project URL`과 `anon` 키를 입력하면 `list.html`에서 DB 데이터를 불러올 수 있습니다.
