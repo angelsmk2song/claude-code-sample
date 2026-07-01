@@ -15,8 +15,10 @@ function escapeHtml(value) {
 }
 
 function getMonthGroup(monthText) {
-  const match = monthText.match(/(\d{1,2})월/);
-  return match ? `${match[1]}월` : '기타';
+  const match = monthText.match(/^(\d{1,2})월\s*\d{1,2}일/);
+  if (match) return `${match[1]}월`;
+  const fallback = monthText.match(/(\d{1,2})월/);
+  return fallback ? `${fallback[1]}월` : '기타';
 }
 
 function getRegionGroup(regionText) {
