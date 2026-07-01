@@ -6,7 +6,7 @@
     <title>지역별 보기 | 2026 전국 축제 여행</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-page="region">
     <header class="hero">
       <div class="hero-inner">
         <p class="eyebrow">지역별 보기</p>
@@ -32,86 +32,10 @@
       </aside>
 
       <section class="content-area">
-        <div class="group-card">
-          <h2>경남</h2>
-          <ul class="festival-list">
-            <li>
-              <strong>진해군항제</strong>
-              <span>4월 / 봄 벚꽃 군항제</span>
-            </li>
-            <li>
-              <strong>진주남강유등제</strong>
-              <span>10월 / 유등과 가을 야경</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="group-card">
-          <h2>강원</h2>
-          <ul class="festival-list">
-            <li>
-              <strong>화천산천어축제</strong>
-              <span>1월 / 겨울 얼음 축제</span>
-            </li>
-            <li>
-              <strong>강릉단오제</strong>
-              <span>5월 / 단오 전통 행사</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="group-card">
-          <h2>전남</h2>
-          <ul class="festival-list">
-            <li>
-              <strong>보성녹차대축제</strong>
-              <span>5월 / 녹차 문화 체험</span>
-            </li>
-            <li>
-              <strong>광양매화축제</strong>
-              <span>3월 / 매화꽃 봄 축제</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="group-card">
-          <h2>경북</h2>
-          <ul class="festival-list">
-            <li>
-              <strong>안동국제탈춤페스티벌</strong>
-              <span>9월 / 탈춤과 국제 공연</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="group-card">
-          <h2>전북</h2>
-          <ul class="festival-list">
-            <li>
-              <strong>순창발효소스토굴축제</strong>
-              <span>10월 / 발효 음식 체험</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="group-card">
-          <h2>충남</h2>
-          <ul class="festival-list">
-            <li>
-              <strong>보령머드페스티벌</strong>
-              <span>7월 / 머드 체험 축제</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="group-card">
-          <h2>부산</h2>
-          <ul class="festival-list">
-            <li>
-              <strong>부산국제영화제</strong>
-              <span>10월 / 영화 축제</span>
-            </li>
-          </ul>
+        <div data-region-container>
+          <div class="group-card">
+            <p>데이터를 불러오는 중입니다...</p>
+          </div>
         </div>
 
         <section class="note-section">
@@ -119,5 +43,6 @@
         </section>
       </section>
     </main>
+    <script type="module" src="scripts.js"></script>
   </body>
 </html>
